@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    padding-top: 20px;
+    background-color: #B1D0E0;
+}
+
+#container {
+    width: 600px;
+    height: 600px;
+    text-align: center;
+    background-color: #406882;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.input {
+    width: inherit;
+    height: 80px;
+    background-color: #1A374D;
+    padding-top: 20px;
+    border-radius: 20px;
+
+}
+
+#task_input {
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 20px;
+    background-color: #B1D0E0;
+}
+
+#task_btn {
+    width: 60px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #4C3F91;
+    transform: scale(1.1);
+}
+
+button {
+    background-color: #6998AB;
+}
+
+#task_container {
+    width: inherit;
+    height: auto;
+    background-color: #406882;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.task {
+    width: 200px;
+    height: 200px;
+    background-color: #6998AB;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 50%;
+    animation-name: fadetask;
+    animation-duration: 0.7s;
+}
+
+.task_text {
+    width: 150px;
+    height: 100px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_container {
+    width: 100px;
+    height: 40px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn {
+    font-size: 25px;
+}
+
+
+
+.done {
+    background-color: yellow;
+}
+
+.close {
+    background-color: blue;
+    cursor: pointer;
+}
+
+
+@keyframes fadetask {
+    0% {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+
+    100% {
+        opacity: 100;
+        transform: translateY(0);
+    }
+}
