@@ -59,5 +59,6 @@ function submit() {
 
    function crosstask() {
        text.style.textDecoration = "line-through";
+       taskDiv.style.backgroundColor = "#9AE66E"
    }
 }
