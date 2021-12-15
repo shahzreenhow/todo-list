@@ -12,7 +12,7 @@ body {
 
 #container {
     width: 600px;
-    height: 600px;
+    height: 400px;
     text-align: center;
     background-color: #406882;
     margin: 10px auto;
@@ -27,6 +27,7 @@ body {
     background-color: #1A374D;
     padding-top: 20px;
     border-radius: 20px;
+    min-height: 80px;
 
 }
 
@@ -65,6 +66,8 @@ button {
     flex-wrap: wrap;
     column-gap: 10px;
     row-gap: 10px;
+    padding-top: 20px;
+    border-radius: 20px;
 }
 
 .task {
@@ -78,6 +81,7 @@ button {
     border-radius: 50%;
     animation-name: fadetask;
     animation-duration: 0.7s;
+    
 }
 
 .task_text {
